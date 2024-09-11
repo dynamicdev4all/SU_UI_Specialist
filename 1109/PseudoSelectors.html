@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* li:nth-child(odd){
+            color: red;
+        }
+        li:nth-child(even){
+            color: blue;
+        } */
+
+      /* i want every 3rd element color should be red */
+      li:nth-child(3n) {
+        /* n will start from 1 */
+        color: red;
+      }
+
+      /* i want (1,4,7,10,13,....) element color should be blue
+        1
+        4 : 3+1
+        7 : 6+1
+        10 : 9+1 
+        
+        (3n+1)*/
+
+      li:nth-child(3n + 1) {
+        color: rgb(40, 104, 121);
+      }
+
+      p{
+        color: maroon;
+      }
+
+      p::first-letter{
+        font-size: 2em;
+      }
+
+      p::first-line{
+        color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+      <li>Items</li>
+    </ol>
+    <!-- odd : red
+     even : blue -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+      doloribus iure voluptatem aliquid debitis sed quidem ex ad velit incidunt
+      autem possimus dolor eum nihil ipsam dignissimos, a ducimus magni.
+    </p>
+  </body>
+</html>
