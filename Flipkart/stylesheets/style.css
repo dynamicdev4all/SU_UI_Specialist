@@ -74,3 +74,44 @@ ul li{
 .banner{
     margin-top: 25px;
 }
+
+/* product section */
+.obj-collection{
+    display: flex;
+}
+.pp{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.object{
+    border: 1px solid rgb(220, 217, 217);
+    /* border: 1px solid red; */
+    margin: 10px;
+    border-radius: 10px;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.object-img{
+    width: 90%;
+    /* border: 1px solid green; */
+    padding: 5px;
+}
+.object-img img{
+    width: 100%;
+}
+
+.object-desc{
+    /* border: 1px solid blue; */
+    /* padding: 5px; */
+    text-align: center;
+    justify-content: center;
+}
+
+.price{
+    font-weight: bolder;
+}
