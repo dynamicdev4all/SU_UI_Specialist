@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is a heading</h1>
+
+    <button onclick="greetUser()">Tap</button>
+    <button onclick="userDetails()">Add</button>
+    <button onclick="isEligible()">DL</button>
+    <script>
+        // let name = "ram"
+        // let age = 50
+        // alert(`Hello ${name} , age is ${age}`)
+
+        function greetUser(){
+            alert("Hello user")
+        }
+        
+        function addition(){
+            let num1 = 10
+            let num2 =20
+            console.log(num1+num2)
+        }
+
+        function userDetails(){
+            username = prompt("Enter name")
+            userAge = prompt("Enter age")
+            console.log(username,userAge)
+        }
+
+        function isEligible(){
+            userAge = prompt("Enter ur age")
+            // CONDITIONAL STATEMENTS
+
+            if(userAge >= 18){
+                console.log("Eligible")
+            }
+            else{
+                console.log("Not eligible")
+            }
+        }
+    </script>
+</body>
+</html>
