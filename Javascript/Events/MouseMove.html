@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 30px;
+            height: 30px;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.onmousemove = animateMouse;
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function animateMouse(event){
+            var circle = document.createElement("div");
+            circle.className = "circle";
+            document.body.appendChild(circle);
+
+            circle.style.top = event.clientY + "px";
+            circle.style.left = event.clientX + "px";
+
+            // Set a random color for the circle
+            circle.style.backgroundColor = getRandomColor();
+
+            circle.style.transition = "all 0.9s linear 0s";
+
+            circle.style.top = circle.offsetTop - 20 + "px";
+            circle.style.left = circle.offsetLeft - 20 + "px";
+
+            circle.style.opacity = 0;
+        }
+    </script>
+</body>
+</html>

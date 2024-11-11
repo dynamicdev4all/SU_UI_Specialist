@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      table {
+        /* border-collapse: collapse; */
+        width: 400px;
+        margin: 10px auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="text"] {
+        width: 94%;
+        padding: 10px;
+        font-size: 18px;
+        text-align: right;
+        border: none;
+        outline: none;
+        background-color: #eee;
+      }
+
+      td {
+        width: 20%;
+        /* padding: 10px; */
+        text-align: center;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: #4caf50;
+        color: #fff;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #45a049;
+      }
+
+      .btn:active {
+        background-color: rgb(132, 85, 57);
+      }
+    </style>
+    <script src="Calculator1.js"></script>
+  </head>
+  <body>
+    <h1>Basic Calculator</h1>
+
+    <table>
+      <tr>
+        <td colspan="4">
+          <input
+            type="text"
+            name=""
+            id="resultBox"
+            placeholder="0000"
+            readonly
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="btn clear">Clear</button>
+        </td>
+        <td>
+          <button class="btn del">DEL</button>
+        </td>
+        <td colspan="2">
+          <button class="btn res">=</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="btn num">7</button>
+        </td>
+        <td>
+          <button class="btn num">8</button>
+        </td>
+        <td>
+          <button class="btn num">9</button>
+        </td>
+        <td>
+          <button class="btn opr">+</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="btn num">6</button>
+        </td>
+        <td>
+          <button class="btn num">5</button>
+        </td>
+        <td>
+          <button class="btn num">4</button>
+        </td>
+        <td>
+          <button class="btn num">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="btn num">3</button>
+        </td>
+        <td>
+          <button class="btn num">2</button>
+        </td>
+        <td>
+          <button class="btn num">1</button>
+        </td>
+        <td>
+          <button class="btn opr">*</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="btn opr">e</button>
+        </td>
+        <td>
+          <button class="btn num">0</button>
+        </td>
+        <td>
+          <button class="btn opr">.</button>
+        </td>
+        <td>
+          <button class="btn opr">/</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+

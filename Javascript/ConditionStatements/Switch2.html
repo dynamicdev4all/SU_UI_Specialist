@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dayName;
+        let choice =  parseInt(prompt("Enter day"));
+
+        switch(choice){
+            case 1 : 
+                dayName ="Monday";
+                break;
+            case 2 : 
+                dayName ="Tueday";
+                break;
+            case 3 : 
+                dayName ="Wednesday";
+                break;
+            case 4 : 
+                dayName ="Thursday";
+                break;
+            case 5 : 
+                dayName ="Friday";
+                break;
+            case 6 : 
+                dayName ="Saturday";
+                break;
+            case 7 : 
+                dayName ="Sunday";
+                break;
+
+            default :
+                alert("Invalid Choice..");
+        }
+
+        alert(`Day is : ${dayName}`);
+    </script>
+
+</body>
+</html>

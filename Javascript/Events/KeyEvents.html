@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Key Events</h1>
+    <!-- onkeydown
+    onkeypress
+    onkeyup -->
+
+    <!-- <input type="text" placeholder="Enter your name" onkeypress="validate(this)"> -->
+    <!-- <input type="text" placeholder="Enter your name" onkeydown="validate(this)"> -->
+    <input type="text" placeholder="Enter your name" onkeyup="validate(this)">
+    <span id="msg"></span>
+
+    <script>
+        function validate(obj){
+            alert("Key Pressed");
+            console.log(obj.value);
+        }
+    </script>
+</body>
+</html>
+
+<!-- onkeypress : triggers the js / function first and then update the 
+value and do not support backspace -->
+<!-- onkeydown : triggers the js / function first and then update the 
+value and supports backspace -->

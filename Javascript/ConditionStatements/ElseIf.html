@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conditional statement</h1>
+    <h2>If-Else</h2>
+    <script>
+        let num1 = parseInt(prompt("Enter num1"));
+        let num2 = parseInt(prompt("Enter num2"));
+        // alert(`The age is ${age}`);
+        let choice = parseInt(prompt("Enter your choice : 1/2/3/4"));
+        
+        if(choice == 1){
+            let result = num1 + num2;
+            alert(`Sum of ${num1} and ${num2} is ${result}`);
+        }
+        else if(choice == 2){
+            let result = num1 - num2;
+            alert(`Difference of ${num1} and ${num2} is ${result}`);
+        }
+        else if(choice == 3){
+            let result = num1 * num2;
+            alert(`Product of ${num1} and ${num2} is ${result}`);
+        }
+        else if(choice == 4){
+            let result = num1 / num2;
+            alert(`Quotient of ${num1} and ${num2} is ${result}`);
+        }
+        else{
+            alert("Invalid Choice");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Mouse Events
+        <!-- onmouseenter , onmousemove, onmouseleave , onmouseout -->
+    </h1>
+    <div onmouseenter="changeImage(this)"  onmouseout="changeImage2(this)">
+        <img src="https://i.pinimg.com/originals/37/01/75/37017584561a74ca1a6415a6a5bab76c.gif" alt="">
+    </div>
+
+    <script>
+        function changeImage(obj){
+            obj.innerHTML =`<img src="https://www.icegif.com/wp-content/uploads/2022/04/icegif-939.gif" alt="">`
+        }
+        function changeImage2(obj){
+            obj.innerHTML =`<img src="https://i.pinimg.com/originals/37/01/75/37017584561a74ca1a6415a6a5bab76c.gif" alt="">`
+        }
+    </script>
+</body>
+</html>

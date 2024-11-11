@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter Your Name");
+        greet(name);
+
+        var x = parseInt(prompt("Enter num 1"));
+        var y = parseInt(prompt("Enter num 2"));
+
+        alert(`Sum of values is :  ${add(x,y)}`);
+        alert(`Difference of values is :  ${sub(x,y)}`);
+
+        function greet(name){
+            alert(`Hello ${name}`);
+        }
+
+        function add(x , y){
+            return x+y;
+        }
+        function sub(x , y){
+            return x-y;
+        }
+    </script>
+</body>
+</html>
