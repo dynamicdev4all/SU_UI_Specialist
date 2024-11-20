@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.task-manager {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.task-manager h1 {
+    text-align: center;
+    color: #333;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.task-input button {
+    padding: 10px 15px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background: #4cae4c;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}
+
+.task-item .actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-item .actions .edit {
+    background: #f0ad4e;
+    color: white;
+}
+
+.task-item .actions .delete {
+    background: #d9534f;
+    color: white;
+}
