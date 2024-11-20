@@ -1,0 +1,9 @@
+table {
+    width: 50%;
+    margin: 0 auto;
+}
+.btn {
+    width: 350px;
+    height: 200px;
+    font-size: 5em;
+}
